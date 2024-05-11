@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <!-- Добавляем стили Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        Регистрация
+      </h2>
+    </div>
+
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div class="bg-white py-8 px-8 shadow sm:rounded-lg sm:px-10">
+        <form class="space-y-6">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <div class="mt-1">
+              <input id="email" name="email" type="email" autocomplete="email" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Имя</label>
+            <div class="mt-1">
+              <input id="name" name="name" type="text" autocomplete="name" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="username" class="block text-sm font-medium text-gray-700">Пользовательское имя</label>
+            <div class="mt-1">
+              <input id="username" name="username" type="text" autocomplete="username" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Пароль</label>
+            <div class="mt-1">
+              <input id="password" name="password" type="password" autocomplete="current-password" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="password2" class="block text-sm font-medium text-gray-700">Повторите пароль</label>
+            <div class="mt-1">
+              <input id="password2" name="password2" type="password" autocomplete="current-password" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="city" class="block text-sm font-medium text-gray-700">Город</label>
+            <div class="mt-1">
+              <input id="city" name="city" type="text" autocomplete="city" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="country" class="block text-sm font-medium text-gray-700">Страна</label>
+            <div class="mt-1">
+              <input id="country" name="country" type="text" autocomplete="country" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="sex" class="block text-sm font-medium text-gray-700">Пол</label>
+            <div class="mt-1">
+              <select id="sex" name="sex" autocomplete="sex" required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit"
+              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Зарегистрироваться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
